@@ -205,4 +205,95 @@ checkWinner(score1Dolphins,score1Koalas);
 // console.log(arrayOfSumNumber);
 
 
+// Array methods
+// const friends = ["David", "Tresor","Christian"];
+
+/*
+The JavaScript method toString() converts an array to a string of (comma separated) array values.
+*/
+// console.log(friends.toString());
+
+/* 
+The join() method also joins all array elements into a string.
+
+It behaves just like toString(), but in addition you can specify the separator:
+*/
+// const arrayJoin = friends.join(" ");
+// console.log(arrayJoin);
+
+/* 
+JavaScript Array pop()
+The pop() method removes the last element from an array:
+*/
+// friends.pop();
+// console.log(friends.join(','));
+
+/* 
+JavaScript Array push()
+The push() method adds a new element to an array (at the end):
+*/
+// friends.push("Renzo");
+// console.log(friends.toString());
+
+/*
+JavaScript Array shift()
+The shift() method removes the first array element and "shifts" all other elements to a lower index.
+*/
+
+// The shift() method returns the value that was "shifted out":
+
+// const friend = friends.shift();
+// console.log(friend);
+
+/*
+JavaScript Array unshift()
+The unshift() method adds a new element to an array (at the beginning), and "unshifts" older elements:
+*/
+// const addFavFriend = friends.unshift("Twagira");
+// console.log(addFavFriend);
+
+/*
+Array elements can be deleted using the JavaScript operator delete.
+
+Using delete leaves undefined holes in the array.
+
+Use pop() or shift() instead.
+*/
+
+// delete friends[0];
+// console.log(friends);
+
+/*
+The concat() method creates a new array by merging (concatenating) existing arrays:
+*/
+
+// const friendsCollege = ["David", "Tresor","Christian"];
+// const highSchoolFriends = new Array("Francis", "Dany", "Claude");
+
+// const friends = friendsCollege.concat(highSchoolFriends);
+// console.log(friends.join(','));
+
+/*
+Flattening an Array
+Flattening an array is the process of reducing the dimensionality of an array.
+
+The flat() method creates a new array with sub-array elements concatenated to a specified depth.
+*/
+
+const friendsCollege = [["David"], ["Tresor","Christian"]];
+const highSchoolFriends = new Array("Francis", "Dany", "Claude");
+friendsCollege.push(highSchoolFriends);
+console.log(friendsCollege.join(','));
+const newArray = friendsCollege.flat();
+console.log(newArray);
+
+
+
+
+
+
+
+
+
+
 
