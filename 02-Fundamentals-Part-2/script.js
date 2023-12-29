@@ -167,5 +167,42 @@ checkWinner(score1Dolphins,score1Koalas);
 
 */
 
+// Arrays
+
+// Create function to return array of my friends name
+
+// const friends =()=>["David", "Tresor","Christian"];
+// console.log(friends());
+// const friends = ["David", "Renzo","Christian"];
+
+// Display array length of friend array.
+// console.log(friends.length);
+
+// Display first friend name from array friends using index
+
+// console.log(friends[0]);
+
+// display last friend name from array friends 
+
+// console.log(friends[friends.length -1]);
+
+// Replace second friend with my friend Tresor
+// friends[1] = "Tresor";
+
+// display second element from array friends
+// console.log(friends[1]);
+
+// Create array to store values with different data types
+// const firstName = "Michel";
+
+// const nasri = [firstName, "Ange", 2023-2000, friends];
+// console.log(nasri[nasri.length - 1]);
+
+// create array to store sum of numbers
+// const sumOfNumber = (number1, number2, number3) => number1 + number2 + number3;
+
+// const arrayOfSumNumber = [sumOfNumber(12,12,12), sumOfNumber(2,2,2)];
+// console.log(arrayOfSumNumber);
+
 
 
