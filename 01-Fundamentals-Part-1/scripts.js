@@ -258,6 +258,20 @@ HINT 2: Value X is between 50 and 300, if it's >= 50 && <= 300 😉
 
 
 
+// last Challenge
+
+const user = prompt("Enter user type.");
+
+const isAdmin = user === "Admin" ? true:false;
+
+if (isAdmin){
+    console.log("You Have access to all database.");
+} else {
+    console.log("You don't have access to database");
+}
+
+
+
 
 
 
