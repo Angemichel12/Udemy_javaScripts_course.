@@ -280,12 +280,12 @@ Flattening an array is the process of reducing the dimensionality of an array.
 The flat() method creates a new array with sub-array elements concatenated to a specified depth.
 */
 
-const friendsCollege = [["David"], ["Tresor","Christian"]];
-const highSchoolFriends = new Array("Francis", "Dany", "Claude");
-friendsCollege.push(highSchoolFriends);
-console.log(friendsCollege.join(','));
-const newArray = friendsCollege.flat();
-console.log(newArray);
+// const friendsCollege = [["David"], ["Tresor","Christian"]];
+// const highSchoolFriends = new Array("Francis", "Dany", "Claude");
+// friendsCollege.push(highSchoolFriends);
+// console.log(friendsCollege.join(','));
+// const newArray = friendsCollege.flat();
+// console.log(newArray);
 
 
 
