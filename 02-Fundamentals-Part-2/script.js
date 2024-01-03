@@ -309,11 +309,7 @@ TEST DATA: 125, 555, and 44.
 */
 
 /*
-const calcTip = (bill) =>{
-    const tip = bill >=50 && bill <=300 ? bill * 0.15 : bill * 0.2;
-    return tip;
-    
-}
+const calcTip = (bill) => bill >=50 && bill <=300 ? bill * 0.15 : bill * 0.2;
 
 const bills = [125,555,44];
 
@@ -325,6 +321,15 @@ total.push(calcTip(bills[i]) + bills[i]);
 }
 
 */
+
+const michelArray = ['Michel', 'Ange', 2024 - 2000, ['David', 'Christian', 'Tresor']];
+
+const michel = {
+    firstName:'Michel',
+    lastName:'Ange',
+    age:2024 - 2000,
+    friends : ['David', 'Christian', 'Tresor']
+}
 
 
 
