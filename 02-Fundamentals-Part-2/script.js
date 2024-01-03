@@ -416,6 +416,32 @@ if (mark.bmi > john.bmi) {
 
 */
 
+// for loop in javaScripts
+
+/*
+for (let rep =1; rep <= 10; rep++){
+    console.log(`index number ${rep}`);
+}
+*/
+const janasArray = [
+    'jonas',
+    'Schmedtmann',
+    2024 - 1991,
+    'teacher',
+    ['Michel', 'Peter', 'Steven']
+]
+const types = [];
+for(let i = 0; i< janasArray.length; i++){
+
+    if(typeof janasArray[i] !== 'string') continue
+    // Reading from jonas array
+    console.log(janasArray[i], typeof janasArray[i]);
+
+    // Filling types array
+    // types.push(typeof(janasArray[i]));
+}
+
+
 
 
 
