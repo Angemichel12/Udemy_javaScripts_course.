@@ -322,17 +322,43 @@ total.push(calcTip(bills[i]) + bills[i]);
 
 */
 
-const michelArray = ['Michel', 'Ange', 2024 - 2000, ['David', 'Christian', 'Tresor']];
+// const michelArray = ['Michel', 'Ange', 2024 - 2000, ['David', 'Christian', 'Tresor']];
+
+// const michel = {
+//     firstName:'Michel',
+//     lastName:'Ange',
+//     age:2024 - 2000,
+//     friends : ['David', 'Christian', 'Tresor']
+// }
+// console.log("Hello User");
+// console.log(`${michel.firstName} has ${michel['friends'].length} friends, The best friend called ${michel['friends'][0]}`);
+
+
+// Object methods
 
 const michel = {
-    firstName:'Michel',
-    lastName:'Ange',
-    age:2024 - 2000,
-    friends : ['David', 'Christian', 'Tresor']
-}
+        firstName:'Michel',
+        lastName:'Ange',
+        job:'teacher',
+        birthYear:2000,
+        friends : ['David', 'Christian', 'Tresor'],
+        hasDriversLicense: false,
+        calAge: function () {
+            this.age= 2024 - this.birthYear;
+            return this.age;
+        },
+        getSummary: function(){
+            this.summary = `${this.firstName} is a ${this.calAge()} ${this.job}, and he has ${this.hasDriversLicense?"a":"not"} driver's license.`;
+            return this.summary;
+        }
+        
+    }
 
 
-
+michel.getSummary();
+michel.calAge();
+console.log(michel.age);
+console.log(michel.summary);
 
 
 
