@@ -540,7 +540,71 @@ console.log(calcAverage(tips), calcAverage(totals));
 */
 
 
+// Challenge #5
 
+const person = {
+    firstName:"Michel",
+    lastName:"Nasri",
+    birthYear: 2000,
+    salary: 40,
+    email: "angemicheluwizeye@gmail.com",
+    phone: "+250783327944",
+    //calcAge method to calculate personal age
+    calcAge: function (){
+        this.age = 2023 - this.birthYear;
+        return this.age;
+    },
+    // Fullname method to get fullname from firstname and lastname
+    getFullname : function (){
+        this.fullName = this.firstName + ' ' + this.lastName;
+        return this.fullName;
+    },
+    // getRemainRetirementYear method to get year remain to be retired.
+    getRemainRetirementYear : function(){
+        this.retirementYear = 65 - this.calcAge();
+        return this.retirementYear;
+    },
+
+    // taxOnSalary method to get tax to pay on salary.
+    taxOnSalary: function(){
+        this.tax = this.salary * 0.18;
+        return this.tax;
+    },
+    // netSalary method to calculate ramain salary after tax;
+    netSalary: function(){
+        this.netAmount = this.salary - this.taxOnSalary();
+        return this.netAmount;
+    },
+    // getEmailDomain method to get domain from email
+    getEmailDomain:function(){
+        this.domain = this.email.split('@')[1];
+        return this.domain;
+    },
+    // getCountryCode method to get phone country code.
+    getCountryCode : function (){
+        this.code = this.phone.slice(0,4);
+        return this.code;
+    }
+    
+
+}
+
+person.getRemainRetirementYear();
+person.calcAge();
+person.getFullname();
+console.log(person.age);
+// Display fullname in console
+console.log(person.fullName);
+// display retirement year
+console.log(person.retirementYear);
+// Display amount of tax on salary.
+console.log(person.taxOnSalary());
+// Display net salary
+console.log(person.netSalary());
+// Display domain
+console.log(person.getEmailDomain());
+// Display country code
+console.log(person.getCountryCode());
 
 
 
