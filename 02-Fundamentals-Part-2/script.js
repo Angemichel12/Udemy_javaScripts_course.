@@ -542,6 +542,7 @@ console.log(calcAverage(tips), calcAverage(totals));
 
 // Challenge #5
 
+/*
 const person = {
     firstName:"Michel",
     lastName:"Nasri",
@@ -606,6 +607,7 @@ console.log(person.getEmailDomain());
 // Display country code
 console.log(person.getCountryCode());
 
+*/
 
 
 
