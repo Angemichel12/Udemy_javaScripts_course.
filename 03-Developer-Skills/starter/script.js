@@ -45,3 +45,20 @@ cantBeatSoJoin([[], [], [], []]) -> []
 cantBeatSoJoin([[], [], [0], []]) -> [0]
 cantBeatSoJoin([[1,0,1,0,1,0], [0,1,0,0,1,0,0,1], [0], []]) -> [1, 0, 1, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0]
 */
+
+// Fuction to calculate temperature amplititude
+
+const calcTempAmplititude = function (t1, t2) {
+  let max = 0;
+  let min = 0;
+  const tempArray = t1.concat(t2);
+
+  for (let i = 0; i < tempArray.length; i++) {
+    debugger;
+    if (tempArray[i] > max) max = tempArray[i];
+    if (tempArray[i] < min) min = tempArray[i];
+  }
+  return min;
+};
+
+console.log(calcTempAmplititude([1, 4, 7], [2, 6, 9]));
