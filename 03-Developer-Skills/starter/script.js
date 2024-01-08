@@ -48,17 +48,28 @@ cantBeatSoJoin([[1,0,1,0,1,0], [0,1,0,0,1,0,0,1], [0], []]) -> [1, 0, 1, 0, 1, 0
 
 // Fuction to calculate temperature amplititude
 
+/*
 const calcTempAmplititude = function (t1, t2) {
-  let max = 0;
-  let min = 0;
   const tempArray = t1.concat(t2);
+  let max = tempArray[0];
+  let min = tempArray[0];
 
   for (let i = 0; i < tempArray.length; i++) {
-    debugger;
     if (tempArray[i] > max) max = tempArray[i];
     if (tempArray[i] < min) min = tempArray[i];
   }
-  return min;
+  return max - min;
 };
 
 console.log(calcTempAmplititude([1, 4, 7], [2, 6, 9]));
+*/
+
+const printForeCast = function (arr) {
+  let text = '';
+  for (let i = 0; i < arr.length; i++) {
+    text += `...${arr[i]}C in ${i + 1} days`;
+  }
+  return text + '...';
+};
+
+console.log(printForeCast([17, 21, 23]));
